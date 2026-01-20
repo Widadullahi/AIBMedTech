@@ -45,13 +45,20 @@ const Hero = () => {
   }, [nextSlide]);
 
   return (
-    <section id="home" className="relative min-h-screen flex items-center mt-80 pt-0 bg-secondary/30">
+    <section 
+      id="home" 
+      className="relative min-h-screen flex items-center bg-secondary/30"
+      style={{
+        paddingTop: 'calc(var(--header-height, 80px) + 2rem)',
+        minHeight: 'calc(100vh - var(--header-height, 80px))'
+      }}
+    >
       <div className="container mx-auto px-4">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Content Side */}
           <div className="order-2 lg:order-1">
             {/* Badge */}
-            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-accent/30 bg-accent/10 mb-8 animate-fade-in">
+            <div className="inline-flex items-center gap-2 px-4 py-0 rounded-full border border-accent/30 bg-accent/10 mb-8 animate-fade-in">
               <span className="w-2 h-2 bg-accent rounded-full animate-pulse" />
               <span className="text-sm text-accent font-medium">Trusted Medical Equipment Partner</span>
             </div>
