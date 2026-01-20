@@ -45,7 +45,11 @@ const Hero = () => {
   }, [nextSlide]);
 
   return (
+<<<<<<< HEAD
     <section id="home" className="relative min-h-screen flex items-center mt-80 pt-0 bg-secondary/30">
+=======
+    <section id="home" className="relative min-h-screen flex items-center pt-20 bg-secondary/30">
+>>>>>>> 323c29128b7ae2e6c8deabb18cc0358db4fbefa8
       <div className="container mx-auto px-4">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Content Side */}

@@ -5,7 +5,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap');
 
 /* AIB MedTech Services Design System
+<<<<<<< HEAD
    Clean White Theme with Navy & Teal Accents
+=======
+   Clean White Theme with Teal & Navy Accents
+>>>>>>> 323c29128b7ae2e6c8deabb18cc0358db4fbefa8
 */
 
 @layer base {
@@ -21,8 +25,13 @@
     --popover: 0 0% 100%;
     --popover-foreground: 210 50% 10%;
 
+<<<<<<< HEAD
     /* Primary - Navy Blue */
     --primary: 210 60% 25%;
+=======
+    /* Primary - Deep Navy */
+    --primary: 210 60% 20%;
+>>>>>>> 323c29128b7ae2e6c8deabb18cc0358db4fbefa8
     --primary-foreground: 0 0% 100%;
 
     /* Secondary - Light Gray */
@@ -53,7 +62,11 @@
     /* Sidebar */
     --sidebar-background: 0 0% 98%;
     --sidebar-foreground: 210 50% 10%;
+<<<<<<< HEAD
     --sidebar-primary: 210 60% 25%;
+=======
+    --sidebar-primary: 210 60% 20%;
+>>>>>>> 323c29128b7ae2e6c8deabb18cc0358db4fbefa8
     --sidebar-primary-foreground: 0 0% 100%;
     --sidebar-accent: 210 20% 96%;
     --sidebar-accent-foreground: 210 50% 10%;
@@ -85,7 +98,11 @@
 @layer components {
   .text-gradient-primary {
     @apply bg-clip-text text-transparent;
+<<<<<<< HEAD
     background-image: linear-gradient(135deg, hsl(210 60% 25%) 0%, hsl(210 60% 20%) 100%);
+=======
+    background-image: linear-gradient(135deg, hsl(175 70% 40%) 0%, hsl(175 70% 30%) 100%);
+>>>>>>> 323c29128b7ae2e6c8deabb18cc0358db4fbefa8
   }
 
   .text-gradient-accent {
@@ -108,31 +125,56 @@
   }
 
   .service-card:hover {
+<<<<<<< HEAD
     border-color: hsl(210 60% 25%);
     transform: translateY(-4px);
     box-shadow: 0 20px 40px hsl(210 60% 25% / 0.1);
+=======
+    border-color: hsl(175 70% 40%);
+    transform: translateY(-4px);
+    box-shadow: 0 20px 40px hsl(175 70% 40% / 0.1);
+>>>>>>> 323c29128b7ae2e6c8deabb18cc0358db4fbefa8
   }
 
   .btn-cta {
     @apply inline-flex items-center justify-center gap-2 px-8 py-4 font-semibold rounded-lg transition-all duration-300;
+<<<<<<< HEAD
     background: linear-gradient(135deg, hsl(210 60% 25%) 0%, hsl(210 60% 20%) 100%);
     color: hsl(0 0% 100%);
     box-shadow: 0 4px 20px hsl(210 60% 25% / 0.3);
+=======
+    background: linear-gradient(135deg, hsl(175 70% 40%) 0%, hsl(175 65% 35%) 100%);
+    color: hsl(0 0% 100%);
+    box-shadow: 0 4px 20px hsl(175 70% 40% / 0.3);
+>>>>>>> 323c29128b7ae2e6c8deabb18cc0358db4fbefa8
   }
 
   .btn-cta:hover {
     transform: translateY(-2px);
+<<<<<<< HEAD
     box-shadow: 0 8px 30px hsl(210 60% 25% / 0.4);
+=======
+    box-shadow: 0 8px 30px hsl(175 70% 40% / 0.4);
+>>>>>>> 323c29128b7ae2e6c8deabb18cc0358db4fbefa8
   }
 
   .btn-outline {
     @apply inline-flex items-center justify-center gap-2 px-8 py-4 font-semibold rounded-lg transition-all duration-300;
+<<<<<<< HEAD
     border: 2px solid hsl(210 60% 25%);
     color: hsl(210 60% 25%);
   }
 
   .btn-outline:hover {
     background: hsl(210 60% 25%);
+=======
+    border: 2px solid hsl(210 60% 20%);
+    color: hsl(210 60% 20%);
+  }
+
+  .btn-outline:hover {
+    background: hsl(210 60% 20%);
+>>>>>>> 323c29128b7ae2e6c8deabb18cc0358db4fbefa8
     color: hsl(0 0% 100%);
     transform: translateY(-2px);
   }
@@ -164,7 +206,11 @@
 
   .carousel-dot.active {
     @apply w-8;
+<<<<<<< HEAD
     background: hsl(210 60% 25%);
+=======
+    background: hsl(175 70% 40%);
+>>>>>>> 323c29128b7ae2e6c8deabb18cc0358db4fbefa8
   }
 }
 
