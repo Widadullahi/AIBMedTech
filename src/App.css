@@ -40,7 +40,6 @@
 .read-the-docs {
   color: #888;
 }
-<<<<<<< HEAD
 .scrollbar-hide {
   -ms-overflow-style: none;
   scrollbar-width: none;
@@ -48,5 +47,3 @@
 .scrollbar-hide::-webkit-scrollbar {
   display: none;
 }
-=======
->>>>>>> 323c29128b7ae2e6c8deabb18cc0358db4fbefa8
