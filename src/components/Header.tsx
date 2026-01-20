@@ -41,7 +41,7 @@ const Header = () => {
               
               {/* Company name integrated with logo - Navy Blue Theme */}
               <div className="block">
-                <span className="block text-2xl md:text-3xl lg:text-4xl font-bold bg-gradient-to-r from-navy-800 via-navy-700 to-navy-600 bg-clip-text text-transparent leading-tight">
+                <span className="block text-2xl mb-0 md:text-3xl lg:text-4xl font-bold bg-gradient-to-r from-navy-800 via-navy-700 to-navy-600 bg-clip-text text-transparent leading-tight">
                   AIB MedTech
                 </span>
                 <span className="block text-sm md:text-base font-semibold text-navy-600 uppercase tracking-wider mt-1">
