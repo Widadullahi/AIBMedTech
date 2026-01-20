@@ -47,9 +47,6 @@ const Header = () => {
                 <span className="block text-sm md:text-base font-semibold text-navy-600 uppercase tracking-wider mt-1">
                   Medical Excellence
                 </span>
-                <span className="block text-xs text-gray-500 font-medium mt-1">
-                  Trusted Healthcare Solutions
-                </span>
               </div>
             </a>
           </div>
