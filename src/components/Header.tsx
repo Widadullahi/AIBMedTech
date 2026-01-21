@@ -5,130 +5,99 @@ import { useEffect } from "react";
 const Header = () => {
   useEffect(() => {
     const updateHeaderHeight = () => {
-      const header = document.querySelector('header');
+      const header = document.querySelector("header");
       if (header) {
-        const height = header.offsetHeight;
-        document.documentElement.style.setProperty('--header-height', `${height}px`);
+        document.documentElement.style.setProperty(
+          "--header-height",
+          `${header.offsetHeight}px`
+        );
       }
     };
-    
-    // Initial update
+
     updateHeaderHeight();
-    
-    // Update on resize
-    window.addEventListener('resize', updateHeaderHeight);
-    
-    // Update when DOM changes (if header content changes)
+    window.addEventListener("resize", updateHeaderHeight);
+
     const observer = new MutationObserver(updateHeaderHeight);
-    const header = document.querySelector('header');
-    if (header) {
-      observer.observe(header, { 
-        attributes: true, 
-        childList: true, 
-        subtree: true 
-      });
-    }
-    
+    const header = document.querySelector("header");
+    if (header) observer.observe(header, { childList: true, subtree: true });
+
     return () => {
-      window.removeEventListener('resize', updateHeaderHeight);
+      window.removeEventListener("resize", updateHeaderHeight);
       observer.disconnect();
     };
   }, []);
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md border-b border-gray-200 shadow-xl">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md border-b border-gray-200 shadow-lg">
       <div className="container mx-auto px-2 sm:px-3">
-        {/* Top bar with contact info - Navy Blue Theme - COMPACT */}
-        <div className="hidden md:flex items-center justify-end gap-3 py-1 text-xs text-gray-600 border-b border-gray-200/20">
-          <a 
-            href="tel:08069810198" 
-            className="flex items-center gap-1.5 hover:text-navy-600 transition-colors duration-200"
-          >
-            <Phone className="w-2.5 h-2.5" />
-            08069810198
+        {/* Top bar */}
+        <div className="hidden md:flex justify-end gap-2 py-0.5 text-[10px] text-gray-600">
+          <a href="tel:08069810198" className="flex items-center gap-1">
+            <Phone className="w-2 h-2" /> 08069810198
           </a>
-          <a 
-            href="mailto:aibmedtechservices@gmail.com" 
-            className="flex items-center gap-1.5 hover:text-navy-600 transition-colors duration-200"
+          <a
+            href="mailto:aibmedtechservices@gmail.com"
+            className="flex items-center gap-1"
           >
-            <Mail className="w-2.5 h-2.5" />
-            aibmedtechservices@gmail.com
+            <Mail className="w-2 h-2" /> aibmedtechservices@gmail.com
           </a>
         </div>
 
-        {/* Main navigation - Clean Layout */}
-        <nav className="flex flex-row items-center justify-between py-2 md:py-1.5 gap-2">
-          {/* Logo Only - No Text on Mobile */}
-          <div className="flex items-center justify-start flex-shrink-0">
-            <a href="#home" className="flex items-center gap-1.5 md:gap-1.5 group">
-              {/* Logo Only */}
-              <div className="relative">
-                <img
-                  className="h-28 md:h-32 lg:h-40 w-auto z-10 transition-transform duration-300 group-hover:scale-105 drop-shadow-lg"
-                  src={logo}
-                  alt="AIB MedTech Services"
-                />
-                <div className="absolute inset-0 rounded-full blur-sm opacity-0 
-                  group-hover:opacity-40 transition-opacity duration-500 
-                  bg-gradient-to-r from-navy-900/30 to-blue-900/30">
-                </div>
-              </div>
-
-              {/* Company name - HIDDEN on mobile, shown on desktop */}
-              <div className="flex flex-col leading-none hidden md:block">
-                <span className="text-2xl lg:text-3xl font-black 
-                  bg-gradient-to-r from-navy-900 via-navy-800 to-navy-800 
-                  bg-clip-text text-transparent tracking-tight
-                  drop-shadow-[0_1px_1px_rgba(0,0,0,0.3)]">
-                  AIB MedTech
-                </span>
-                <span className="text-xs text-navy-700 font-bold mt-0.5">
-                  Services
-                </span>
-              </div>
-            </a>
-          </div>
-
-          {/* Navigation Links Only - No Contact Icons */}
-          <div className="flex items-center justify-center flex-1 overflow-x-auto scrollbar-hide min-w-0">
-            <div className="flex items-center gap-2 md:gap-3 lg:gap-4">
-              {/* Navigation Links */}
-              <a 
-                href="#home" 
-                className="text-sm font-bold text-navy-900 hover:text-navy-700 transition-all duration-200 relative group px-2 py-1.5 md:px-2 md:py-1 rounded-md hover:bg-navy-50 whitespace-nowrap"
-              >
-                Home
-                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-navy-700 group-hover:w-full transition-all duration-300 rounded-full"></span>
-              </a>
-              <a 
-                href="#services" 
-                className="text-sm font-bold text-navy-800 hover:text-navy-700 transition-all duration-200 relative group px-2 py-1.5 md:px-2 md:py-1 rounded-md hover:bg-navy-50 whitespace-nowrap"
-              >
-                Services
-                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-navy-700 group-hover:w-full transition-all duration-300 rounded-full"></span>
-              </a>
-              <a 
-                href="#about" 
-                className="text-sm font-bold text-navy-800 hover:text-navy-700 transition-all duration-200 relative group px-2 py-1.5 md:px-2 md:py-1 rounded-md hover:bg-navy-50 whitespace-nowrap"
-              >
-                About
-                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-navy-700 group-hover:w-full transition-all duration-300 rounded-full"></span>
-              </a>
-              <a 
-                href="#contact" 
-                className="text-sm font-bold text-navy-800 hover:text-navy-700 transition-all duration-200 relative group px-2 py-1.5 md:px-2 md:py-1 rounded-md hover:bg-navy-50 whitespace-nowrap"
-              >
-                Contact
-                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-navy-700 group-hover:w-full transition-all duration-300 rounded-full"></span>
-              </a>
+        {/* Main nav */}
+        <nav className="flex items-center justify-between py-1">
+          {/* LOGO */}
+          <a href="#home" className="flex items-center gap-2 flex-shrink-0">
+            <div className="relative overflow-visible">
+              <img
+                src={logo}
+                alt="AIB MedTech Services"
+                className="
+                  h-24 sm:h-26 md:h-30
+                  w-auto
+                  scale-150 sm:scale-140 md:scale-120
+                  origin-left
+                  drop-shadow-xl
+                  filter
+                  brightness-95
+                  contrast-125
+                "
+                style={{
+                  filter: "drop-shadow(2px 2px 2px rgba(0,0,0,0.25)) brightness(0.95) contrast(1.25)",
+                }}
+              />
             </div>
-          </div>
 
-          {/* Book Appointment Button - Separate on Right */}
-          <div className="flex items-center justify-end flex-shrink-0">
-            <a 
-              href="#contact" 
-              className="bg-gradient-to-r from-navy-700 to-navy-900 text-white text-sm font-black py-2 px-4 md:py-1.5 md:px-6 rounded-md transition-all duration-300 hover:scale-105 hover:shadow hover:shadow-navy-500/20 active:scale-95 whitespace-nowrap border border-navy-800 hover:border-navy-700"
+            {/* NAME */}
+            <div className="flex flex-col leading-tight min-w-[90px] ml-12">
+              <span className="text-sm md:text-lg lg:text-xl font-black text-navy-900">
+                AIB MedTech
+              </span>
+              <span className="hidden md:block text-[10px] font-bold text-navy-700">
+                Services
+              </span>
+            </div>
+          </a>
+
+          {/* LINKS */}
+          <div className="flex items-center gap-1 lg:gap-2">
+            <div className="flex md:hidden gap-0.5">
+              <Phone className="w-4 h-4 text-navy-700" />
+              <Mail className="w-4 h-4 text-navy-700" />
+            </div>
+
+            {["Home", "Services", "About", "Contact"].map((item) => (
+              <a
+                key={item}
+                href={`#${item.toLowerCase()}`}
+                className="text-xs font-bold px-1.5 py-0.5 rounded hover:bg-navy-50"
+              >
+                {item}
+              </a>
+            ))}
+
+            <a
+              href="#contact"
+              className="bg-navy-800 text-white text-xs font-black px-3 py-1 rounded hover:scale-105 transition"
             >
               Book
             </a>
