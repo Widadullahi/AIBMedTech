@@ -62,17 +62,18 @@ const Header = () => {
                   contrast-125
                 "
                 style={{
-                  filter: "drop-shadow(2px 2px 2px rgba(0,0,0,0.25)) brightness(0.95) contrast(1.25)",
+                  filter:
+                    "drop-shadow(2px 2px 2px rgba(0,0,0,0.25)) brightness(0.95) contrast(1.25)",
                 }}
               />
             </div>
 
             {/* NAME */}
-            <div className="flex flex-col leading-tight min-w-[90px] ml-12">
+            <div className="hidden md:flex flex-col leading-tight min-w-[90px] ml-12">
               <span className="text-sm md:text-lg lg:text-xl font-black text-navy-900">
                 AIB MedTech
               </span>
-              <span className="hidden md:block text-[10px] font-bold text-navy-700">
+              <span className="text-[10px] font-bold text-navy-700">
                 Services
               </span>
             </div>
@@ -80,7 +81,7 @@ const Header = () => {
 
           {/* LINKS */}
           <div className="flex items-center gap-1 lg:gap-2">
-            <div className="flex md:hidden gap-0.5">
+            <div className="flex md:hidden gap-1">
               <Phone className="w-4 h-4 text-navy-700" />
               <Mail className="w-4 h-4 text-navy-700" />
             </div>
