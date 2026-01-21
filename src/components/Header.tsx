@@ -85,7 +85,7 @@ const Header = () => {
               <a
                 key={item}
                 href={`#${item.toLowerCase()}`}
-                className=" gap-0.01 text-xs font-bold px-0.5 py-0.5 rounded hover:bg-navy-50"
+                className=" gap-0.01 text-xs font-bold px-1.5 py-0.2 rounded hover:bg-navy-50"
               >
                 {item}
               </a>
