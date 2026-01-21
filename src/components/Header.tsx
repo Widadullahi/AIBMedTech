@@ -60,6 +60,7 @@ const Header = () => {
                   filter
                   brightness-95
                   contrast-125
+                  -ml-2 sm:ml-0
                 "
                 style={{
                   filter:
