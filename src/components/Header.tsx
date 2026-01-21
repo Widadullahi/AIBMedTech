@@ -80,7 +80,7 @@ const Header = () => {
           </a>
 
           {/* LINKS */}
-          <div className="flex items-center gap-1 lg:gap-2">
+          <div className="flex items-center gap-0.5 lg:gap-2">
             <div className="flex md:hidden gap-1">
               <Phone className="w-4 h-4 text-navy-700" />
               <Mail className="w-4 h-4 text-navy-700" />
