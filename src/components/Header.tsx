@@ -83,17 +83,15 @@ const Header = () => {
               </div>
 
               {/* Company name - ADJUSTED FOR LARGER LOGO */}
-              <div className="flex flex-col leading-none">
-                <span className="text-xs md:text-lg lg:text-xl font-black 
-                  bg-gradient-to-r from-navy-900 via-navy-800 to-navy-800 
-                  bg-clip-text text-transparent tracking-tight
-                  drop-shadow-[0_1px_1px_rgba(0,0,0,0.2)]">
+              <div className="hidden md:flex flex-col leading-tight min-w-[90px] ml-12">
+                <span className="text-sm md:text-lg lg:text-xl font-black text-navy-900">
                   AIB MedTech
                 </span>
-                <span className="text-[8px] md:text-[10px] text-navy-700 font-bold mt-0 hidden md:block">
+                <span className="text-[10px] font-bold text-navy-700">
                   Services
                 </span>
               </div>
+
             </a>
           </div>
 
