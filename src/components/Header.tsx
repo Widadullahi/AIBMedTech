@@ -80,7 +80,7 @@ const Header = () => {
           </a>
 
           {/* LINKS */}
-          <div className="flex items-center gap-0.25 lg:gap-2">
+          <div className="flex items-center gap-0.05 lg:gap-2">
             {["Home", "Services", "About", "Contact"].map((item) => (
               <a
                 key={item}
