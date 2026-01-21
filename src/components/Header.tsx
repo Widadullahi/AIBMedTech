@@ -51,7 +51,7 @@ const Header = () => {
               <img
                 src={logo}
                 alt="AIB MedTech Services"
-                className="ml-105
+                className="ml-0
                   h-24 sm:h-26 md:h-30
                   w-auto
                   scale-150 sm:scale-140 md:scale-120
@@ -85,7 +85,7 @@ const Header = () => {
               <a
                 key={item}
                 href={`#${item.toLowerCase()}`}
-                className=" gap-0.01 text-xs font-bold px-0.3 py-1.5 rounded hover:bg-navy-50"
+                className=" gap-0.01 text-xs font-bold px-0.5 py-1.5 rounded hover:bg-navy-50"
               >
                 {item}
               </a>
