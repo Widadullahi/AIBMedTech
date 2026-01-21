@@ -51,7 +51,7 @@ const Header = () => {
               <img
                 src={logo}
                 alt="AIB MedTech Services"
-                className="ml-0
+                className="
                   h-24 sm:h-26 md:h-30
                   w-auto
                   scale-150 sm:scale-140 md:scale-120
