@@ -81,7 +81,7 @@ const Header = () => {
 
           {/* LINKS */}
           <div className="flex items-center gap-0.5 lg:gap-1">
-            <div className="flex md:hidden gap-1">
+            <div className="flex md:hidden gap-0.5">
               <Phone className="w-4 h-4 text-navy-700" />
               <Mail className="w-4 h-4 text-navy-700" />
             </div>
