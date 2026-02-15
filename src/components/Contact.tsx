@@ -95,8 +95,8 @@ const Contact = () => {
                   </div>
                   <div>
                     <p className="text-sm text-muted-foreground mb-1">Location</p>
-                    <p className="text-foreground font-medium">Nigeria</p>
-                    <p className="text-sm text-muted-foreground">Nationwide Service</p>
+                    <p className="text-foreground font-medium">Luth, Surulere, Lagos.</p>
+                    <p className="text-sm text-muted-foreground">We Deliver Nationwide</p>
                   </div>
                 </div>
               </div>
